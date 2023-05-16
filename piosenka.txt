@@ -10,11 +10,4 @@ Refren-02.txt
 
 Pomost.txt
 
-I'm dynamite
-T.N.T
-Oi! Oi! Oi!
-And I'll win the fight
-T.N.T
-Oi! Oi! Oi!
-I'm a power load
-T.N.T., watch me explode!
+Refren-03.txt
