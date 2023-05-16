@@ -8,16 +8,7 @@ Zwrotka-02.txt
 
 Refren-02.txt
 
-T.N.T
-Oi! Oi! Oi!
-T.N.T
-Oi! Oi! Oi!
-T.N.T
-Oi! Oi! Oi!
-T.N.T
-Oi! Oi! Oi!
-T.N.T
-Oi! Oi! Oi!
+Pomost.txt
 
 I'm dynamite
 T.N.T
