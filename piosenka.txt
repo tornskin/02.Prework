@@ -6,8 +6,8 @@ Refren-01.txt
 
 Zwrotka-02.txt
 
-Refren-02.txt
+Refren-01.txt
 
 Pomost.txt
 
-Refren-03.txt
+Refren-02.txt
