@@ -1,0 +1,570 @@
+$ git log -p Intro.txt
+commit 42ad3f4fe7353cd3ef106327c83e9757dacda01f
+Author: piotr_daniec <piotr.daniec@gmail.com>
+Date:   Tue May 16 07:58:53 2023 +0200
+
+    Dodano pliki dla poszczegolnych fragmentow utworu i przeniesiono intro
+
+diff --git a/Intro.txt b/Intro.txt
+new file mode 100644
+index 0000000..58c3488
+--- /dev/null
++++ b/Intro.txt
+@@ -0,0 +1,3 @@
++Oi! Oi! Oi! Oi! Oi! Oi!
++Oi! Oi! Oi! Oi! Oi! Oi!
++Oi! Oi! Oi!
+\ No newline at end of file
+
+
+$ git log -p Pomost.txt
+commit 0a0283d196d411378c9fb4f76693a23df32841e0
+Author: piotr_daniec <piotr.daniec@gmail.com>
+Date:   Tue May 16 08:09:47 2023 +0200
+
+    Dodano pomost miedzy refrenami
+
+diff --git a/Pomost.txt b/Pomost.txt
+index e69de29..688037e 100644
+--- a/Pomost.txt
++++ b/Pomost.txt
+@@ -0,0 +1,10 @@
++T.N.T
++Oi! Oi! Oi!
++T.N.T
++Oi! Oi! Oi!
++T.N.T
++Oi! Oi! Oi!
++T.N.T
++Oi! Oi! Oi!
++T.N.T
++Oi! Oi! Oi!
+\ No newline at end of file
+
+commit 42ad3f4fe7353cd3ef106327c83e9757dacda01f
+Author: piotr_daniec <piotr.daniec@gmail.com>
+Date:   Tue May 16 07:58:53 2023 +0200
+
+    Dodano pliki dla poszczegolnych fragmentow utworu i przeniesiono intro
+
+diff --git a/Pomost.txt b/Pomost.txt
+new file mode 100644
+index 0000000..e69de29
+
+
+$ git log -p Refren-01.txt
+commit 6e593ad32d0d05ecccb70ea1445767416d299ad5 (HEAD -> master)
+Author: piotr_daniec <piotr.daniec@gmail.com>
+Date:   Tue May 16 08:19:50 2023 +0200
+
+    Usunieto powtarzajacy sie refren i wyedytowano nieprawidlowa zwrotke
+
+diff --git a/Refren-01.txt b/Refren-01.txt
+index 6bf5ca6..f8e67cd 100644
+--- a/Refren-01.txt
++++ b/Refren-01.txt
+@@ -1,9 +1,4 @@
+ 'Cause I'm T.N.T., I'm dynamite
+ T.N.T., and I'll win the fight
+ T.N.T., I'm a power load
+-T.N.T., watch me explode
+-
+-I'm dirty, mean, I'm mighty unclean
+-I'm a wanted man
+-Public enemy number one
+-Understand?
+\ No newline at end of file
++T.N.T., watch me explode
+\ No newline at end of file
+
+commit 4a9125d443732cae4c42349d6cc4125ed41cf1a0
+Author: piotr_daniec <piotr.daniec@gmail.com>
+Date:   Tue May 16 08:15:12 2023 +0200
+
+    Revert "Usunieto jedna linie z refrenu"
+
+    This reverts commit c492279922a0c2cae77630df608e2280e133ec85.
+
+diff --git a/Refren-01.txt b/Refren-01.txt
+index ff9da72..6bf5ca6 100644
+--- a/Refren-01.txt
++++ b/Refren-01.txt
+@@ -1,3 +1,4 @@
++'Cause I'm T.N.T., I'm dynamite
+ T.N.T., and I'll win the fight
+ T.N.T., I'm a power load
+ T.N.T., watch me explode
+
+commit c492279922a0c2cae77630df608e2280e133ec85
+Author: piotr_daniec <piotr.daniec@gmail.com>
+Date:   Tue May 16 08:12:46 2023 +0200
+
+    Usunieto jedna linie z refrenu
+
+diff --git a/Refren-01.txt b/Refren-01.txt
+index 6bf5ca6..ff9da72 100644
+--- a/Refren-01.txt
++++ b/Refren-01.txt
+@@ -1,4 +1,3 @@
+-'Cause I'm T.N.T., I'm dynamite
+ T.N.T., and I'll win the fight
+ T.N.T., I'm a power load
+ T.N.T., watch me explode
+
+commit 8548e25f7bd53a212e0156423ccf6b61b8fda8b6
+Author: piotr_daniec <piotr.daniec@gmail.com>
+Date:   Tue May 16 08:05:00 2023 +0200
+
+    Dodano refren nr 1
+
+diff --git a/Refren-01.txt b/Refren-01.txt
+index e69de29..6bf5ca6 100644
+--- a/Refren-01.txt
++++ b/Refren-01.txt
+@@ -0,0 +1,9 @@
++'Cause I'm T.N.T., I'm dynamite
++T.N.T., and I'll win the fight
++T.N.T., I'm a power load
++T.N.T., watch me explode
++
++I'm dirty, mean, I'm mighty unclean
++I'm a wanted man
++Public enemy number one
++Understand?
+\ No newline at end of file
+
+commit 42ad3f4fe7353cd3ef106327c83e9757dacda01f
+Author: piotr_daniec <piotr.daniec@gmail.com>
+Date:   Tue May 16 07:58:53 2023 +0200
+
+    Dodano pliki dla poszczegolnych fragmentow utworu i przeniesiono intro
+
+diff --git a/Refren-01.txt b/Refren-01.txt
+new file mode 100644
+index 0000000..e69de29
+
+
+$ git log -p Refren-02.txt
+commit 6e593ad32d0d05ecccb70ea1445767416d299ad5 (HEAD -> master)
+Author: piotr_daniec <piotr.daniec@gmail.com>
+Date:   Tue May 16 08:19:50 2023 +0200
+
+    Usunieto powtarzajacy sie refren i wyedytowano nieprawidlowa zwrotke
+
+diff --git a/Refren-02.txt b/Refren-02.txt
+index f8e67cd..6c67910 100644
+--- a/Refren-02.txt
++++ b/Refren-02.txt
+@@ -1,4 +1,8 @@
+-'Cause I'm T.N.T., I'm dynamite
+-T.N.T., and I'll win the fight
+-T.N.T., I'm a power load
+-T.N.T., watch me explode
+\ No newline at end of file
++I'm dynamite
++T.N.T
++Oi! Oi! Oi!
++And I'll win the fight
++T.N.T
++Oi! Oi! Oi!
++I'm a power load
++T.N.T., watch me explode!
+\ No newline at end of file
+
+commit 1cb735e3ff176245fcefe6ea34d3eef74cc081ad
+Author: piotr_daniec <piotr.daniec@gmail.com>
+Date:   Tue May 16 08:09:03 2023 +0200
+
+    Dodano refren nr 2
+
+diff --git a/Refren-02.txt b/Refren-02.txt
+index e69de29..f8e67cd 100644
+--- a/Refren-02.txt
++++ b/Refren-02.txt
+@@ -0,0 +1,4 @@
++'Cause I'm T.N.T., I'm dynamite
++T.N.T., and I'll win the fight
++T.N.T., I'm a power load
++T.N.T., watch me explode
+\ No newline at end of file
+
+commit 42ad3f4fe7353cd3ef106327c83e9757dacda01f
+Author: piotr_daniec <piotr.daniec@gmail.com>
+Date:   Tue May 16 07:58:53 2023 +0200
+
+    Dodano pliki dla poszczegolnych fragmentow utworu i przeniesiono intro
+
+diff --git a/Refren-02.txt b/Refren-02.txt
+new file mode 100644
+index 0000000..e69de29
+
+
+$ git log -p Zwrotka-01.txt
+commit 373e52d755467ddd50418377258198619abe5a4a
+Author: piotr_daniec <piotr.daniec@gmail.com>
+Date:   Tue May 16 08:00:47 2023 +0200
+
+    Przeniesiono pierwsza zwrotke
+
+diff --git a/Zwrotka-01.txt b/Zwrotka-01.txt
+index e69de29..e37bf2f 100644
+--- a/Zwrotka-01.txt
++++ b/Zwrotka-01.txt
+@@ -0,0 +1,10 @@
++See me ride out of the sunset
++On your color TV screen
++Out for all that I can get
++If you know what I mean
++Women to the left of me
++And women to the right
++
++Ain't got no gun
++Ain't got no knife
++Don't you start no fight
+\ No newline at end of file
+
+commit 42ad3f4fe7353cd3ef106327c83e9757dacda01f
+Author: piotr_daniec <piotr.daniec@gmail.com>
+Date:   Tue May 16 07:58:53 2023 +0200
+
+    Dodano pliki dla poszczegolnych fragmentow utworu i przeniesiono intro
+
+diff --git a/Zwrotka-01.txt b/Zwrotka-01.txt
+new file mode 100644
+index 0000000..e69de29
+
+
+$ git log -p Zwrotka-02.txt
+commit 6e593ad32d0d05ecccb70ea1445767416d299ad5 (HEAD -> master)
+Author: piotr_daniec <piotr.daniec@gmail.com>
+Date:   Tue May 16 08:19:50 2023 +0200
+
+    Usunieto powtarzajacy sie refren i wyedytowano nieprawidlowa zwrotke
+
+diff --git a/Zwrotka-02.txt b/Zwrotka-02.txt
+index d01b7ac..3c98f5c 100644
+--- a/Zwrotka-02.txt
++++ b/Zwrotka-02.txt
+@@ -5,7 +5,7 @@ Run for your life
+ The man is back in town
+ So don't you mess me 'round
+
+-'Cause I'm T.N.T., I'm dynamite
+-T.N.T., and I'll win the fight
+-T.N.T., I'm a power load
+-T.N.T., watch me explode
+\ No newline at end of file
++I'm dirty, mean, I'm mighty unclean
++I'm a wanted man
++Public enemy number one
++Understand?
+\ No newline at end of file
+
+commit 7285072c46034a7c17635c695d24ff2594b79e51
+Author: piotr_daniec <piotr.daniec@gmail.com>
+Date:   Tue May 16 08:06:21 2023 +0200
+
+    Dodano druga zwrotke
+
+diff --git a/Zwrotka-02.txt b/Zwrotka-02.txt
+index e69de29..d01b7ac 100644
+--- a/Zwrotka-02.txt
++++ b/Zwrotka-02.txt
+@@ -0,0 +1,11 @@
++So lock up your daughter
++Lock up your wife
++Lock up your back door
++Run for your life
++The man is back in town
++So don't you mess me 'round
++
++'Cause I'm T.N.T., I'm dynamite
++T.N.T., and I'll win the fight
++T.N.T., I'm a power load
++T.N.T., watch me explode
+\ No newline at end of file
+
+commit 42ad3f4fe7353cd3ef106327c83e9757dacda01f
+Author: piotr_daniec <piotr.daniec@gmail.com>
+Date:   Tue May 16 07:58:53 2023 +0200
+
+    Dodano pliki dla poszczegolnych fragmentow utworu i przeniesiono intro
+
+diff --git a/Zwrotka-02.txt b/Zwrotka-02.txt
+new file mode 100644
+index 0000000..e69de29
+
+$ git log -p piosenka.txt
+commit 6e593ad32d0d05ecccb70ea1445767416d299ad5 (HEAD -> master)
+Author: piotr_daniec <piotr.daniec@gmail.com>
+Date:   Tue May 16 08:19:50 2023 +0200
+
+    Usunieto powtarzajacy sie refren i wyedytowano nieprawidlowa zwrotke
+
+diff --git a/piosenka.txt b/piosenka.txt
+index e8b8ee6..25b9a8f 100644
+--- a/piosenka.txt
++++ b/piosenka.txt
+@@ -6,8 +6,8 @@ Refren-01.txt
+
+ Zwrotka-02.txt
+
+-Refren-02.txt
++Refren-01.txt
+
+ Pomost.txt
+
+-Refren-03.txt
+\ No newline at end of file
++Refren-02.txt
+\ No newline at end of file
+
+commit c5dc2f26d17446053c445987ff9567f2dd0d3612
+Author: piotr_daniec <piotr.daniec@gmail.com>
+Date:   Tue May 16 08:10:32 2023 +0200
+
+    Dodano refren nr 3
+
+diff --git a/piosenka.txt b/piosenka.txt
+index 31ae5ad..e8b8ee6 100644
+--- a/piosenka.txt
++++ b/piosenka.txt
+@@ -10,11 +10,4 @@ Refren-02.txt
+
+ Pomost.txt
+
+-I'm dynamite
+-T.N.T
+-Oi! Oi! Oi!
+-And I'll win the fight
+-T.N.T
+-Oi! Oi! Oi!
+-I'm a power load
+-T.N.T., watch me explode!
+\ No newline at end of file
++Refren-03.txt
+\ No newline at end of file
+
+commit 0a0283d196d411378c9fb4f76693a23df32841e0
+Author: piotr_daniec <piotr.daniec@gmail.com>
+Date:   Tue May 16 08:09:47 2023 +0200
+
+    Dodano pomost miedzy refrenami
+
+diff --git a/piosenka.txt b/piosenka.txt
+index 758e157..31ae5ad 100644
+--- a/piosenka.txt
++++ b/piosenka.txt
+@@ -8,16 +8,7 @@ Zwrotka-02.txt
+
+ Refren-02.txt
+
+-T.N.T
+-Oi! Oi! Oi!
+-T.N.T
+-Oi! Oi! Oi!
+-T.N.T
+-Oi! Oi! Oi!
+-T.N.T
+-Oi! Oi! Oi!
+-T.N.T
+-Oi! Oi! Oi!
++Pomost.txt
+
+ I'm dynamite
+ T.N.T
+
+commit 1cb735e3ff176245fcefe6ea34d3eef74cc081ad
+Author: piotr_daniec <piotr.daniec@gmail.com>
+Date:   Tue May 16 08:09:03 2023 +0200
+
+    Dodano refren nr 2
+
+diff --git a/piosenka.txt b/piosenka.txt
+index 65a0c96..758e157 100644
+--- a/piosenka.txt
++++ b/piosenka.txt
+@@ -6,6 +6,8 @@ Refren-01.txt
+
+ Zwrotka-02.txt
+
++Refren-02.txt
++
+ T.N.T
+ Oi! Oi! Oi!
+ T.N.T
+
+commit 7285072c46034a7c17635c695d24ff2594b79e51
+Author: piotr_daniec <piotr.daniec@gmail.com>
+Date:   Tue May 16 08:06:21 2023 +0200
+
+    Dodano druga zwrotke
+
+diff --git a/piosenka.txt b/piosenka.txt
+index 5ae2db2..65a0c96 100644
+--- a/piosenka.txt
++++ b/piosenka.txt
+@@ -4,17 +4,7 @@ Zwrotka-01.txt
+
+ Refren-01.txt
+
+-So lock up your daughter
+-Lock up your wife
+-Lock up your back door
+-Run for your life
+-The man is back in town
+-So don't you mess me 'round
+-
+-'Cause I'm T.N.T., I'm dynamite
+-T.N.T., and I'll win the fight
+-T.N.T., I'm a power load
+-T.N.T., watch me explode
++Zwrotka-02.txt
+
+ T.N.T
+ Oi! Oi! Oi!
+
+commit 8548e25f7bd53a212e0156423ccf6b61b8fda8b6
+Author: piotr_daniec <piotr.daniec@gmail.com>
+Date:   Tue May 16 08:05:00 2023 +0200
+
+    Dodano refren nr 1
+
+diff --git a/piosenka.txt b/piosenka.txt
+index 62bd025..5ae2db2 100644
+--- a/piosenka.txt
++++ b/piosenka.txt
+@@ -2,15 +2,7 @@ Intro.txt
+
+ Zwrotka-01.txt
+
+-'Cause I'm T.N.T., I'm dynamite
+-T.N.T., and I'll win the fight
+-T.N.T., I'm a power load
+-T.N.T., watch me explode
+-
+-I'm dirty, mean, I'm mighty unclean
+-I'm a wanted man
+-Public enemy number one
+-Understand?
++Refren-01.txt
+
+ So lock up your daughter
+ Lock up your wife
+
+commit 373e52d755467ddd50418377258198619abe5a4a
+Author: piotr_daniec <piotr.daniec@gmail.com>
+Date:   Tue May 16 08:00:47 2023 +0200
+
+    Przeniesiono pierwsza zwrotke
+
+diff --git a/piosenka.txt b/piosenka.txt
+index 158e5f1..62bd025 100644
+--- a/piosenka.txt
++++ b/piosenka.txt
+@@ -1,15 +1,6 @@
+ Intro.txt
+
+-See me ride out of the sunset
+-On your color TV screen
+-Out for all that I can get
+-If you know what I mean
+-Women to the left of me
+-And women to the right
+-
+-Ain't got no gun
+-Ain't got no knife
+-Don't you start no fight
++Zwrotka-01.txt
+
+ 'Cause I'm T.N.T., I'm dynamite
+ T.N.T., and I'll win the fight
+
+commit 42ad3f4fe7353cd3ef106327c83e9757dacda01f
+Author: piotr_daniec <piotr.daniec@gmail.com>
+Date:   Tue May 16 07:58:53 2023 +0200
+
+    Dodano pliki dla poszczegolnych fragmentow utworu i przeniesiono intro
+
+diff --git a/piosenka.txt b/piosenka.txt
+index c60da7e..158e5f1 100644
+--- a/piosenka.txt
++++ b/piosenka.txt
+@@ -1,6 +1,4 @@
+-Oi! Oi! Oi! Oi! Oi! Oi!
+-Oi! Oi! Oi! Oi! Oi! Oi!
+-Oi! Oi! Oi!
++Intro.txt
+
+ See me ride out of the sunset
+ On your color TV screen
+
+commit bbe9b023aab73cf5cff16ca26dda052d4e1dfb17
+Author: piotr_daniec <piotr.daniec@gmail.com>
+Date:   Tue May 16 07:52:09 2023 +0200
+
+    Dodano plik z tekstem piosenki
+
+diff --git a/piosenka.txt b/piosenka.txt
+new file mode 100644
+index 0000000..c60da7e
+--- /dev/null
++++ b/piosenka.txt
+@@ -0,0 +1,56 @@
++Oi! Oi! Oi! Oi! Oi! Oi!
++Oi! Oi! Oi! Oi! Oi! Oi!
++Oi! Oi! Oi!
++
++See me ride out of the sunset
++On your color TV screen
++Out for all that I can get
++If you know what I mean
++Women to the left of me
++And women to the right
++
++Ain't got no gun
++Ain't got no knife
++Don't you start no fight
++
++'Cause I'm T.N.T., I'm dynamite
++T.N.T., and I'll win the fight
++T.N.T., I'm a power load
++T.N.T., watch me explode
++
++I'm dirty, mean, I'm mighty unclean
++I'm a wanted man
++Public enemy number one
++Understand?
++
++So lock up your daughter
++Lock up your wife
++Lock up your back door
++Run for your life
++The man is back in town
++So don't you mess me 'round
++
++'Cause I'm T.N.T., I'm dynamite
++T.N.T., and I'll win the fight
++T.N.T., I'm a power load
++T.N.T., watch me explode
++
++T.N.T
++Oi! Oi! Oi!
++T.N.T
++Oi! Oi! Oi!
++T.N.T
++Oi! Oi! Oi!
++T.N.T
++Oi! Oi! Oi!
++T.N.T
++Oi! Oi! Oi!
++
++I'm dynamite
++T.N.T
++Oi! Oi! Oi!
++And I'll win the fight
++T.N.T
++Oi! Oi! Oi!
++I'm a power load
++T.N.T., watch me explode!
+\ No newline at end of file
